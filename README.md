@@ -16,7 +16,9 @@ https://aad.portal.azure.com
         // If you are planning an SPA architecture, have no backend components
         // or intend to invoke a Web API via JavaScript, use of the implicit flow
         // for token acquisition is recommended.
-        // See https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-dev-understanding-oauth2-implicit-grant, there's also good info on the topc including swim lane diagrams in the Modern Authentication with Azure AD book.
+        // See https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-dev-understanding-oauth2-implicit-grant,
+        // Good level of detail on implicit flow including swim lane diagrams in the
+        // Modern Authentication with Azure AD book.
         // Must see -- https://channel9.msdn.com/Shows/Web+Camps+TV/AngularJS-Module-for-Microsoft-Azure-Active-Directory-Authentication
         // (skip to 14:15 for implicit flow whiteboarding)
     
