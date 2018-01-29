@@ -1,5 +1,8 @@
 # Azure Active Directory Cheat Codes
 
+## webapiAADff/
+Visual Studio 2017 solution representing a Web API that calls Microsoft Graph API with app credentials (client ID and app secret).
+
 ### Azure Portal
 https://portal.azure.com
 
