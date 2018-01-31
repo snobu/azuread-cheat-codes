@@ -1,6 +1,6 @@
 ## _How do i run this?_
 
-Add a `secrets.config` file to project root (alongside Web.config):
+Add a `secrets.config` file to project root (alongside Web.config) and hit F5 in Visual Studio.
 
 ```xml
 <appSettings>
