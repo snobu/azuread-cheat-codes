@@ -1,9 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using System.Diagnostics.Tracing;
+using System.Web.Http.Tracing;
+using System.Diagnostics;
 
 namespace webapiAADff.Controllers
 {

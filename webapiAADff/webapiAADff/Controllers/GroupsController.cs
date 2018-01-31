@@ -17,6 +17,10 @@ namespace webapiAADff.Controllers
         // GET api/groups
         public async Task<List<Dictionary<string, string>>> Get()
         {
+            // Sprinkle some ADAL logging, to taste.
+            // Check out the AdalLoggerCallback implementation in Startup.cs
+            LoggerCallbackHandler.Callback = new Startup.AdalLoggerCallback();
+
             string authority = $"https://login.microsoftonline.com/{ConfigurationManager.AppSettings["ida:Tenant"]}";
 
             AuthenticationContext context = new AuthenticationContext(authority);
