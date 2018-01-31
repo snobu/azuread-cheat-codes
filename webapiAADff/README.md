@@ -57,8 +57,10 @@ config.EnableSystemDiagnosticsTracing();
 
 To enable ADAL tracing, simply implement [this public `Log()` method](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/blob/dev/adal/src/Microsoft.IdentityModel.Clients.ActiveDirectory/IAdalLogCallback.cs#L77-L82):
 
-**Startup.cs** -- (there may be a better place for it, but Startup works just fine):
 ```csharp
+// Startup.cs
+// There may be a better place for it, but Startup works just fine.
+
 public class AdalLoggerCallback : IAdalLogCallback
 {
     public void Log(LogLevel level, string message)
