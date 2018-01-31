@@ -1,4 +1,4 @@
-## Running sample
+## _How do i run this?_
 
 Add a `secrets.config` file to project root (alongside Web.config):
 
