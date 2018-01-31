@@ -11,7 +11,7 @@ Add a `secrets.config` file to project root (alongside Web.config):
 </appSettings>
 ```
 
-## ADAL.NET tracing (quite useful especially for debugging token cache issues):
+## ADAL.NET tracing (quite useful especially for debugging token cache issues)
 
 The `/api/groups` controller is instrumented with ADAL.NET tracing:
 
@@ -27,15 +27,12 @@ The `/api/groups` controller is instrumented with ADAL.NET tracing:
 *** ADAL DEBUG *** 2018-01-31T14:19:36.7287701Z: 13f38a85-8aae-4144-b44d-d513b32f2eb0 - AcquireTokenHandlerBase.cs: Loading from cache.
 *** ADAL DEBUG *** 2018-01-31T14:19:36.7337721Z: 13f38a85-8aae-4144-b44d-d513b32f2eb0 - TokenCache.cs: Looking up cache for a token...
 *** ADAL DEBUG *** 2018-01-31T14:19:36.7417477Z: 13f38a85-8aae-4144-b44d-d513b32f2eb0 - TokenCache.cs: No matching token was found in the cache
-Application Insights Telemetry (unconfigured): {"name":"Microsoft.ApplicationInsights.Dev.RemoteDependency","time":"2018-01-31T14:19:36.7997506Z","tags":{"ai.internal.sdkVersion":"rddf:2.2.0-738","ai.internal.nodeName":"kududev","ai.cloud.roleInstance":"kududev"},"data":{"baseType":"RemoteDependencyData","baseData":{"ver":2,"name":"/swearjarbank.onmicrosoft.com/oauth2/token","id":"WI3SdvHiGCo=","data":"https://login.microsoftonline.com/swearjarbank.onmicrosoft.com/oauth2/token","duration":"00:00:00.2310000","resultCode":"200","success":true,"type":"Http","target":"login.microsoftonline.com","properties":{"DeveloperMode":"true"}}}}
 *** ADAL DEBUG *** 2018-01-31T14:19:37.0767932Z: 13f38a85-8aae-4144-b44d-d513b32f2eb0 - TokenCache.cs: Storing token in the cache...
 *** ADAL DEBUG *** 2018-01-31T14:19:37.0787674Z: 13f38a85-8aae-4144-b44d-d513b32f2eb0 - TokenCache.cs: An item was stored in the cache
 *** ADAL DEBUG *** 2018-01-31T14:19:37.0827921Z: 13f38a85-8aae-4144-b44d-d513b32f2eb0 - AcquireTokenHandlerBase.cs: === Token Acquisition finished successfully. An access token was retuned:
 	Access Token Hash: fwF0VSJPEH4nXqDrMWIXqtEzDd4K1M60m5RQn/uTK8E=
 	Expiration Time: 1/31/2018 3:19:36 PM +00:00
 	User Hash: null
-
-
 
 [...]
 
