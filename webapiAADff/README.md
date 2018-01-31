@@ -55,7 +55,7 @@ If you don't have this already, enable tracing in your Web API first (inside `Re
 config.EnableSystemDiagnosticsTracing();
 ```
 
-To enable ADAL tracing, simply implement [this public `Log()` method](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/blob/dev/adal/src/Microsoft.IdentityModel.Clients.ActiveDirectory/IAdalLogCallback.cs#L75-L82):
+To enable ADAL tracing, simply implement [this public `Log()` method](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/blob/dev/adal/src/Microsoft.IdentityModel.Clients.ActiveDirectory/IAdalLogCallback.cs#L77-L82):
 
 ```csharp
 public class AdalLoggerCallback : IAdalLogCallback
