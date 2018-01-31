@@ -67,7 +67,7 @@ public class AdalLoggerCallback : IAdalLogCallback
 }
 ```
 
-then call `LoggerCallbackHandler.Callback = new Startup.AdalLoggerCallback();` from a controller.
+then call `LoggerCallbackHandler.Callback = new Startup.AdalLoggerCallback();` from a controller that calls into the ADAL library.
 
 
 ### NOTE
